@@ -190,7 +190,7 @@ if %LicenseToDelete% == r goto :sellerpage
 if %LicenseToDelete% == m goto :options
 echo.
 echo Response:
-PowerShell -Command "(new-object net.webclient).DownloadString('https://keyauth.win/api/seller/?sellerkey=%sellerkey%&type=del&key=%LicenseToDelete&userToo=0')"
+PowerShell -Command "(new-object net.webclient).DownloadString('https://keyauth.win/api/seller/?sellerkey=%sellerkey%&type=del&key=%LicenseToDelete%&userToo=0')"
 echo Please wait, deleting license...
 pause
 goto :options
